@@ -1,0 +1,6 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+PROJECT(sysycompiler)
+set(CMAKE_CXX_STANDARD 11)
+include_directories(include)
+aux_source_directory(src DIR_SRC)
+add_executable(main ${DIR_SRC})

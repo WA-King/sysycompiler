@@ -1,0 +1,42 @@
+[
+  {
+    "directory": "/home/ubuntu/workspace/mycompiler/Debug",
+    "command": "/usr/bin/c++  -I/home/ubuntu/workspace/mycompiler/include -g -std=gnu++11 -o CMakeFiles/main.dir/src/AST.cpp.o -c /home/ubuntu/workspace/mycompiler/src/AST.cpp",
+    "file": "/home/ubuntu/workspace/mycompiler/src/AST.cpp"
+  },
+  {
+    "directory": "/home/ubuntu/workspace/mycompiler/Debug",
+    "command": "/usr/bin/c++  -I/home/ubuntu/workspace/mycompiler/include -g -std=gnu++11 -o CMakeFiles/main.dir/src/TAC.cpp.o -c /home/ubuntu/workspace/mycompiler/src/TAC.cpp",
+    "file": "/home/ubuntu/workspace/mycompiler/src/TAC.cpp"
+  },
+  {
+    "directory": "/home/ubuntu/workspace/mycompiler/Debug",
+    "command": "/usr/bin/c++  -I/home/ubuntu/workspace/mycompiler/include -g -std=gnu++11 -o CMakeFiles/main.dir/src/gen.cpp.o -c /home/ubuntu/workspace/mycompiler/src/gen.cpp",
+    "file": "/home/ubuntu/workspace/mycompiler/src/gen.cpp"
+  },
+  {
+    "directory": "/home/ubuntu/workspace/mycompiler/Debug",
+    "command": "/usr/bin/c++  -I/home/ubuntu/workspace/mycompiler/include -g -std=gnu++11 -o CMakeFiles/main.dir/src/global.cpp.o -c /home/ubuntu/workspace/mycompiler/src/global.cpp",
+    "file": "/home/ubuntu/workspace/mycompiler/src/global.cpp"
+  },
+  {
+    "directory": "/home/ubuntu/workspace/mycompiler/Debug",
+    "command": "/usr/bin/c++  -I/home/ubuntu/workspace/mycompiler/include -g -std=gnu++11 -o CMakeFiles/main.dir/src/main.cpp.o -c /home/ubuntu/workspace/mycompiler/src/main.cpp",
+    "file": "/home/ubuntu/workspace/mycompiler/src/main.cpp"
+  },
+  {
+    "directory": "/home/ubuntu/workspace/mycompiler/Debug",
+    "command": "/usr/bin/c++  -I/home/ubuntu/workspace/mycompiler/include -g -std=gnu++11 -o CMakeFiles/main.dir/src/parser.cpp.o -c /home/ubuntu/workspace/mycompiler/src/parser.cpp",
+    "file": "/home/ubuntu/workspace/mycompiler/src/parser.cpp"
+  },
+  {
+    "directory": "/home/ubuntu/workspace/mycompiler/Debug",
+    "command": "/usr/bin/c++  -I/home/ubuntu/workspace/mycompiler/include -g -std=gnu++11 -o CMakeFiles/main.dir/src/scan.cpp.o -c /home/ubuntu/workspace/mycompiler/src/scan.cpp",
+    "file": "/home/ubuntu/workspace/mycompiler/src/scan.cpp"
+  },
+  {
+    "directory": "/home/ubuntu/workspace/mycompiler/Debug",
+    "command": "/usr/bin/c++  -I/home/ubuntu/workspace/mycompiler/include -g -std=gnu++11 -o CMakeFiles/main.dir/src/symbol.cpp.o -c /home/ubuntu/workspace/mycompiler/src/symbol.cpp",
+    "file": "/home/ubuntu/workspace/mycompiler/src/symbol.cpp"
+  }
+]

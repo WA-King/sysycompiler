@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/main.dir/src/AST.cpp.o CMakeFiles/main.dir/src/TAC.cpp.o CMakeFiles/main.dir/src/gen.cpp.o CMakeFiles/main.dir/src/global.cpp.o CMakeFiles/main.dir/src/main.cpp.o CMakeFiles/main.dir/src/parser.cpp.o CMakeFiles/main.dir/src/scan.cpp.o CMakeFiles/main.dir/src/symbol.cpp.o -o main 
