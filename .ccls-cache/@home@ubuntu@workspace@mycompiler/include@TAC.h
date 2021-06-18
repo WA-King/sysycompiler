@@ -15,7 +15,7 @@ public:
 	bool operator <(const Var &x) const;
     void setID(std::string name,int spaceid,int version=0);
     void setNUM(int val);
-	Var ArraytoVar();
+	Var ArrayBase();
     void setArray(std::string name,Var* index,int spaceid,int version=0);
     void print();
 };

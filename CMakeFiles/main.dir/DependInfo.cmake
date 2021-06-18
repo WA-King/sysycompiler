@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ubuntu/workspace/mycompiler/src/AST.cpp" "CMakeFiles/main.dir/src/AST.cpp.o" "gcc" "CMakeFiles/main.dir/src/AST.cpp.o.d"
+  "/home/ubuntu/workspace/mycompiler/src/RA.cpp" "CMakeFiles/main.dir/src/RA.cpp.o" "gcc" "CMakeFiles/main.dir/src/RA.cpp.o.d"
   "/home/ubuntu/workspace/mycompiler/src/TAC.cpp" "CMakeFiles/main.dir/src/TAC.cpp.o" "gcc" "CMakeFiles/main.dir/src/TAC.cpp.o.d"
   "/home/ubuntu/workspace/mycompiler/src/gen.cpp" "CMakeFiles/main.dir/src/gen.cpp.o" "gcc" "CMakeFiles/main.dir/src/gen.cpp.o.d"
   "/home/ubuntu/workspace/mycompiler/src/global.cpp" "CMakeFiles/main.dir/src/global.cpp.o" "gcc" "CMakeFiles/main.dir/src/global.cpp.o.d"

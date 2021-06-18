@@ -34,6 +34,7 @@ enum TOKEN_TYPE {
     INT,
     CONSTINT,
     ARRAY,
+	ARRAYBASE,
     ELSE,
     VOID,
     BREAK,

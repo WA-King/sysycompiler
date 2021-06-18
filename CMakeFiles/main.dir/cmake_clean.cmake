@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/AST.cpp.o"
   "CMakeFiles/main.dir/src/AST.cpp.o.d"
+  "CMakeFiles/main.dir/src/RA.cpp.o"
+  "CMakeFiles/main.dir/src/RA.cpp.o.d"
   "CMakeFiles/main.dir/src/TAC.cpp.o"
   "CMakeFiles/main.dir/src/TAC.cpp.o.d"
   "CMakeFiles/main.dir/src/gen.cpp.o"

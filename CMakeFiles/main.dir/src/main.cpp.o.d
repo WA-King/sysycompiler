@@ -168,4 +168,5 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/7/bits/fstream.tcc \
  /home/ubuntu/workspace/mycompiler/include/TAC.h \
  /home/ubuntu/workspace/mycompiler/include/gen.h /usr/include/c++/7/map \
- /usr/include/c++/7/bits/stl_map.h /usr/include/c++/7/bits/stl_multimap.h
+ /usr/include/c++/7/bits/stl_map.h /usr/include/c++/7/bits/stl_multimap.h \
+ /home/ubuntu/workspace/mycompiler/include/RA.h

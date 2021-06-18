@@ -153,6 +153,30 @@ src/AST.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/AST.cpp.s
 .PHONY : src/AST.cpp.s
 
+src/RA.o: src/RA.cpp.o
+.PHONY : src/RA.o
+
+# target to build an object file
+src/RA.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/RA.cpp.o
+.PHONY : src/RA.cpp.o
+
+src/RA.i: src/RA.cpp.i
+.PHONY : src/RA.i
+
+# target to preprocess a source file
+src/RA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/RA.cpp.i
+.PHONY : src/RA.cpp.i
+
+src/RA.s: src/RA.cpp.s
+.PHONY : src/RA.s
+
+# target to generate assembly for a file
+src/RA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/RA.cpp.s
+.PHONY : src/RA.cpp.s
+
 src/TAC.o: src/TAC.cpp.o
 .PHONY : src/TAC.o
 
@@ -333,6 +357,9 @@ help:
 	@echo "... src/AST.o"
 	@echo "... src/AST.i"
 	@echo "... src/AST.s"
+	@echo "... src/RA.o"
+	@echo "... src/RA.i"
+	@echo "... src/RA.s"
 	@echo "... src/TAC.o"
 	@echo "... src/TAC.i"
 	@echo "... src/TAC.s"

@@ -83,10 +83,24 @@ CMakeFiles/main.dir/src/AST.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/AST.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/mycompiler/src/AST.cpp -o CMakeFiles/main.dir/src/AST.cpp.s
 
+CMakeFiles/main.dir/src/RA.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/RA.cpp.o: src/RA.cpp
+CMakeFiles/main.dir/src/RA.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/RA.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/RA.cpp.o -MF CMakeFiles/main.dir/src/RA.cpp.o.d -o CMakeFiles/main.dir/src/RA.cpp.o -c /home/ubuntu/workspace/mycompiler/src/RA.cpp
+
+CMakeFiles/main.dir/src/RA.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/RA.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/mycompiler/src/RA.cpp > CMakeFiles/main.dir/src/RA.cpp.i
+
+CMakeFiles/main.dir/src/RA.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/RA.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/mycompiler/src/RA.cpp -o CMakeFiles/main.dir/src/RA.cpp.s
+
 CMakeFiles/main.dir/src/TAC.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TAC.cpp.o: src/TAC.cpp
 CMakeFiles/main.dir/src/TAC.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/TAC.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/TAC.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TAC.cpp.o -MF CMakeFiles/main.dir/src/TAC.cpp.o.d -o CMakeFiles/main.dir/src/TAC.cpp.o -c /home/ubuntu/workspace/mycompiler/src/TAC.cpp
 
 CMakeFiles/main.dir/src/TAC.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/main.dir/src/TAC.cpp.s: cmake_force
 CMakeFiles/main.dir/src/gen.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/gen.cpp.o: src/gen.cpp
 CMakeFiles/main.dir/src/gen.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/gen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/gen.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/gen.cpp.o -MF CMakeFiles/main.dir/src/gen.cpp.o.d -o CMakeFiles/main.dir/src/gen.cpp.o -c /home/ubuntu/workspace/mycompiler/src/gen.cpp
 
 CMakeFiles/main.dir/src/gen.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/main.dir/src/gen.cpp.s: cmake_force
 CMakeFiles/main.dir/src/global.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/global.cpp.o: src/global.cpp
 CMakeFiles/main.dir/src/global.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/global.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/global.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/global.cpp.o -MF CMakeFiles/main.dir/src/global.cpp.o.d -o CMakeFiles/main.dir/src/global.cpp.o -c /home/ubuntu/workspace/mycompiler/src/global.cpp
 
 CMakeFiles/main.dir/src/global.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/main.dir/src/global.cpp.s: cmake_force
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /home/ubuntu/workspace/mycompiler/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 CMakeFiles/main.dir/src/parser.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/parser.cpp.o: src/parser.cpp
 CMakeFiles/main.dir/src/parser.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/parser.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/parser.cpp.o -MF CMakeFiles/main.dir/src/parser.cpp.o.d -o CMakeFiles/main.dir/src/parser.cpp.o -c /home/ubuntu/workspace/mycompiler/src/parser.cpp
 
 CMakeFiles/main.dir/src/parser.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/main.dir/src/parser.cpp.s: cmake_force
 CMakeFiles/main.dir/src/scan.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/scan.cpp.o: src/scan.cpp
 CMakeFiles/main.dir/src/scan.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/scan.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/scan.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/scan.cpp.o -MF CMakeFiles/main.dir/src/scan.cpp.o.d -o CMakeFiles/main.dir/src/scan.cpp.o -c /home/ubuntu/workspace/mycompiler/src/scan.cpp
 
 CMakeFiles/main.dir/src/scan.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/main.dir/src/scan.cpp.s: cmake_force
 CMakeFiles/main.dir/src/symbol.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/symbol.cpp.o: src/symbol.cpp
 CMakeFiles/main.dir/src/symbol.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/symbol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/symbol.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/symbol.cpp.o -MF CMakeFiles/main.dir/src/symbol.cpp.o.d -o CMakeFiles/main.dir/src/symbol.cpp.o -c /home/ubuntu/workspace/mycompiler/src/symbol.cpp
 
 CMakeFiles/main.dir/src/symbol.cpp.i: cmake_force
@@ -184,6 +198,7 @@ CMakeFiles/main.dir/src/symbol.cpp.s: cmake_force
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/AST.cpp.o" \
+"CMakeFiles/main.dir/src/RA.cpp.o" \
 "CMakeFiles/main.dir/src/TAC.cpp.o" \
 "CMakeFiles/main.dir/src/gen.cpp.o" \
 "CMakeFiles/main.dir/src/global.cpp.o" \
@@ -196,6 +211,7 @@ main_OBJECTS = \
 main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/src/AST.cpp.o
+main: CMakeFiles/main.dir/src/RA.cpp.o
 main: CMakeFiles/main.dir/src/TAC.cpp.o
 main: CMakeFiles/main.dir/src/gen.cpp.o
 main: CMakeFiles/main.dir/src/global.cpp.o
@@ -205,7 +221,7 @@ main: CMakeFiles/main.dir/src/scan.cpp.o
 main: CMakeFiles/main.dir/src/symbol.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/workspace/mycompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

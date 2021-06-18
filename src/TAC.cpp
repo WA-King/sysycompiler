@@ -58,27 +58,29 @@ void Var::setArray(std::string name,Var* index,int spaceID,int version) {
     this->version=version;
 }
 bool Var::operator ==(Var &x) {
-	if(x.type==ID) {
-		return x.type==this->type&&x.name==this->name&&x.spaceID==this->spaceID&&x.version==this->version;
+	if(x.type!=this->type) return false;
+	if(x.type==ID||x.type==ARRAYBASE) {
+		return x.name==this->name&&x.spaceID==this->spaceID&&x.version==this->version;
 	}
 	if(x.type==NUM) {
-		return x.type==this->type&&x.val==this->val;
+		return x.val==this->val;
 	}
 }
 bool Var::operator <(const Var &x)const {
 	if(x.type!=this->type) {
 		return this->type<x.type;
 	}
-	if(x.type==ID) {
+	if(x.type==ID||x.type==ARRAYBASE||x.type==ARRAY) {
 		return this->name<x.name;
 	}
 	if(x.type==NUM) {
 		return this->val<x.val;
 	}
 }
-Var Var::ArraytoVar() {
+Var Var::ArrayBase() {
 	Var tmp=Var();
 	tmp.setID(this->name,this->spaceID,this->version);
+    tmp.type=ARRAYBASE;
 	return tmp;
 }
 address::address():lable(""),op(NUL),target(-1) {}
