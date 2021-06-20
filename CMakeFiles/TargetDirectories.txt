@@ -1,3 +1,0 @@
-/home/ubuntu/workspace/mycompiler/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/workspace/mycompiler/CMakeFiles/main.dir
-/home/ubuntu/workspace/mycompiler/CMakeFiles/edit_cache.dir
