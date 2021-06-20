@@ -34,8 +34,10 @@ void PrintOP_TYPE(OP_TYPE x) {
 		printOP(OP_PINRTINT);
 		printOP(OP_GETINT);
 		printOP(OP_GETRETURN);
+		printOP(OP_CONTINUE);
+		printOP(OP_BREAK);
         default:
-            std::cout << "print erro" << '\n';
+			printerror("PrintOP_TYPE erro");
             break;
     }
 }
@@ -214,6 +216,11 @@ void TAC::print() {
                 std::cout<<' '<<x.args.size()<<'\n';
                 break;
             }
+			case OP_BREAK:
+			case OP_CONTINUE: {
+				PrintOP_TYPE(x.op);
+				break;
+			}
             default: {
                 PrintOP_TYPE(x.op);
                 std::cout<<' ';

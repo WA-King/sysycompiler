@@ -1,9 +1,13 @@
-int fun(int a,int b) {
-	printint(a);
-	printint(b);
-}
 int main() {
-	int ans=add(add(1,2),add(2,3));
-	printint(ans);
-	return 0;
+    int n=10,i=0;
+    while(i<n) {
+        i=i+1;
+        if(i==7) {
+            break;
+        }
+        printint(i);
+    }
+    if(i==0) {
+        break;
+    }
 }

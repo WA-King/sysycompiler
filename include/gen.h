@@ -2,7 +2,6 @@
 #define _GEN_H__
 #include"TAC.h"
 #include<map>
-#include<fstream>
 #include "RA.h"
 class GEN{
 public:

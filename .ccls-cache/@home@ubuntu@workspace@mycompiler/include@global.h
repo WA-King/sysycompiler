@@ -66,6 +66,8 @@ enum OP_TYPE {
     OP_JT,
     OP_JF,
     OP_J,
+	OP_BREAK,
+	OP_CONTINUE,
 	OP_DECLARE,
     OP_ASSIGN,
     OP_SETPARAM,

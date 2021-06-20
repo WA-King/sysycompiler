@@ -26,7 +26,7 @@ TOKEN Parse::Match(TOKEN_TYPE t) {
 }
 std::shared_ptr<BaseAST> Parse::getFunDecl(TOKEN_TYPE type,std::string name) {
     if(name=="") name=Match(ID).val;
-	std::cout<<name<<'\n';
+	//std::cout<<name<<'\n';
     if(smb.find(name)!=UNDEFINE) {
         printerror("this function has been declared");
     }
@@ -53,7 +53,6 @@ std::shared_ptr<BaseAST> Parse::getFunDecl(TOKEN_TYPE type,std::string name) {
 std::shared_ptr<BaseAST> Parse::getCompUnit() {
     std::shared_ptr<BaseAST> rt=nullptr,nex=nullptr;
     while(Last.type==INT||Last.type==CONST||Last.type==VOID) {
-		std::cout<<Last.type<<'\n';
         std::shared_ptr<BaseAST> tmp;
         if(Last.type==CONST) {
             tmp=getConstDecl();
@@ -97,7 +96,6 @@ std::shared_ptr<BaseAST> Parse::getAddExp() {
     return rt;
 }
 std::shared_ptr<BaseAST> Parse::getMulExp() {
-    // std::cout<<"MulExp"<<'\n';
     std::shared_ptr<BaseAST> rt = getUnaryExp();
     while (Last.type == MUL || Last.type == DIV || Last.type == MOD) {
         TOKEN_TYPE op = Last.type;
@@ -224,7 +222,6 @@ std::shared_ptr<BaseAST> Parse::getBlock(bool f) {
     if(f) smb.inspace();
     while(Last.type!=RBBRACKETS) {
         std::shared_ptr<BaseAST> tmp;
-		std::cout<<Last.type<<'\n';
         switch (Last.type) {
             case INT:{
                 tmp = getVarDecl(false);
@@ -328,9 +325,10 @@ std::shared_ptr<BaseAST> Parse::getStmt() {
         case IF:
             rt = getIfStmt();
             break;
-        case WHILE:
+        case WHILE: {
             rt = getWhileStmt();
             break;
+		}
         case LBBRACKETS:
             rt = getBlock();
             break;
@@ -382,6 +380,24 @@ std::shared_ptr<BaseAST> Parse::getStmt() {
             Match(SEMICOLON);
             break;
         }
+		case BREAK : {
+			if(inloops<=0) {
+				printerror("break not in loops statements");
+			}
+			Match(BREAK);
+			rt=std::make_shared<ASTBreak>();
+			Match(SEMICOLON);
+			break;
+		}
+		case CONTINUE : {
+			if(inloops<=0) {
+				printerror("continue not in loops statements");
+			}
+			Match(CONTINUE);
+			rt=std::make_shared<ASTContinue>();
+			Match(SEMICOLON);
+			break;
+		}
         default:
             break;
     }
@@ -406,7 +422,9 @@ std::shared_ptr<BaseAST> Parse::getWhileStmt() {
     Match(LSBRACKETS);
     Condition = getLOrExp();
     Match(RSBRACKETS);
+	inloops++;
     Body = getStmt();
+	inloops--;
     return std::make_shared<ASTWhile>(Condition, Body);
 }
 std::shared_ptr<BaseAST> Parse::getGetint() {

@@ -274,8 +274,19 @@ Var ASTWhile::toTAC(std::vector<address>& ans) {
     tmp=address();
     tmp.setjmp(OP_J,lable1);
 	ans.push_back(tmp);
-    ans[L2].target=ans.size();
+	int lable2=ans.size();
+    ans[L2].target=lable2;
     ans.push_back(getlable());
+	for(int i=lable1;i<=lable2;i++) {
+		if(ans[i].op==OP_BREAK&&ans[i].target==-1) {
+			ans[i].op=OP_J;
+			ans[i].target=lable2;
+		}
+		if(ans[i].op==OP_CONTINUE&&ans[i].target==-1) {
+			ans[i].op=OP_J;
+			ans[i].target=lable1;
+		}
+	}
     if(nex!=nullptr) this->nex->toTAC(ans);
     return Var();
 }
@@ -571,6 +582,20 @@ Var ASTPrintint::toTAC(std::vector<address>& ans) {
 		Lval.setArray(name,new Var(id),sid);
 	}
 	tmp.setop(OP_PINRTINT,Lval,Var());
+	ans.push_back(tmp);
+	if(nex!=nullptr) nex->toTAC(ans);
+	return Var();
+}
+Var ASTBreak::toTAC(std::vector<address>& ans) {
+	address tmp;
+	tmp.setjmp(OP_BREAK,-1);
+	ans.push_back(tmp);
+	if(nex!=nullptr) nex->toTAC(ans);
+	return Var();
+}
+Var ASTContinue::toTAC(std::vector<address>& ans) {
+	address tmp;
+	tmp.setjmp(OP_CONTINUE,-1);
 	ans.push_back(tmp);
 	if(nex!=nullptr) nex->toTAC(ans);
 	return Var();

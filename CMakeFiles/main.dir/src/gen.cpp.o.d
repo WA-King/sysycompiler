@@ -139,6 +139,10 @@ CMakeFiles/main.dir/src/gen.cpp.o: \
  /usr/include/c++/7/bits/stl_tree.h \
  /usr/include/c++/7/ext/aligned_buffer.h \
  /usr/include/c++/7/bits/stl_set.h /usr/include/c++/7/bits/stl_multiset.h \
+ /usr/include/c++/7/fstream /usr/include/c++/7/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
+ /usr/include/c++/7/bits/fstream.tcc \
  /home/ubuntu/workspace/mycompiler/include/symbol.h \
  /usr/include/c++/7/memory /usr/include/c++/7/bits/stl_construct.h \
  /usr/include/c++/7/bits/stl_uninitialized.h \
@@ -163,9 +167,5 @@ CMakeFiles/main.dir/src/gen.cpp.o: \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
  /usr/include/c++/7/map /usr/include/c++/7/bits/stl_map.h \
- /usr/include/c++/7/bits/stl_multimap.h /usr/include/c++/7/fstream \
- /usr/include/c++/7/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
- /usr/include/c++/7/bits/fstream.tcc \
+ /usr/include/c++/7/bits/stl_multimap.h \
  /home/ubuntu/workspace/mycompiler/include/RA.h

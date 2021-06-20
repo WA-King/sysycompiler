@@ -13,6 +13,7 @@ public:
 class Parse : public SCAN {
 public:
     TOKEN Last;
+	int inloops=0;
     TOKEN_TYPE returntype;
     Parse() = default;
     Parse(std::string);

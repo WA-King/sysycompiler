@@ -2,6 +2,7 @@
 #define _TAC_h__
 #include"global.h"
 #include<set>
+#include<fstream>
 #include"symbol.h"
 class Var {
 public:

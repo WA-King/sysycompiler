@@ -141,4 +141,14 @@ public:
 	ASTPrintint(TOKEN_TYPE,std::string,std::shared_ptr<BaseAST>,int);
     Var toTAC(std::vector<address>&) override;
 };
+class ASTBreak :public BaseAST {
+public:
+	ASTBreak()=default;
+    Var toTAC(std::vector<address>&) override;
+};
+class ASTContinue :public BaseAST {
+public:
+	ASTContinue()=default;
+    Var toTAC(std::vector<address>&) override;
+};
 #endif
