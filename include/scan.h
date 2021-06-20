@@ -27,6 +27,7 @@ public:
     SCAN(std::string);
     char getNextchar();
     bool getNewbuf();
+	void linenote();
     char popNextchar();
     void init();
     void PrintTOKEN_TYPE(TOKEN_TYPE);

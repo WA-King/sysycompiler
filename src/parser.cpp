@@ -5,6 +5,10 @@
 Parse::Parse(std::string filename) : returntype(UNDEFINE),SCAN(filename) {}
 void Parse::NextTOKEN() {
     Last = getToken();
+	while(Last.type==LINE_NOTE) {
+		linenote();
+		Last=getToken();
+	} 
     //PrintTOKEN_TYPE(Last.type);
     //std::cout << '\n';
     //std::cout<<' '<<Last.val<<'\n';
@@ -15,12 +19,11 @@ TOKEN Parse::Match(TOKEN_TYPE t) {
         NextTOKEN();
         return tmp;
     } else {
-        std::cout<<Last.type<<'\n';
+        std::cerr<<Last.type<<'\n';
         PrintTOKEN_TYPE(Last.type);
-        std::cout << "->";
+        std::cerr << "->";
         PrintTOKEN_TYPE(t);
-        std::cout << '\n';
-        std::cout << "FUCK" << '\n';
+        std::cerr << '\n';
         exit(0);
     }
 }

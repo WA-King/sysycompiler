@@ -5,11 +5,13 @@
 using namespace std;
 int main(int argc,char *argv[]) {
     if(argc!=2) {
-        std::cout<<"input file"<<'\n';
+        std::cerr<<"input file"<<'\n';
         return 0;
     }
-    std::cout<<argv[1]<<'\n';
+    std::cerr<<argv[1]<<'\n';
 	string infile=argv[1];
+	string filename=infile.substr(0,infile.size()-3);
+	freopen((filename+".mid").c_str(),"w",stdout);
 	if(infile.substr(infile.size()-3,3)!=".sy") {
 		printerror("Please input .sy file");
 	}
@@ -20,10 +22,8 @@ int main(int argc,char *argv[]) {
     TAC tac;
     tac.ASTtoTAC(it);
 	tac.print();
-	string outfile=infile.substr(0,infile.size()-3);
-	outfile+=".asm";
 	GEN generator;
 	generator.code=tac.code;
-	generator.gen(outfile);
+	generator.gen(filename+".asm");
     return 0;
 }
