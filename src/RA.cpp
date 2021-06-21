@@ -20,6 +20,7 @@ int RA::getunusedreg() {
 		}
 	}
 	printerror("can't find unusedreg");
+    return -1;
 }
 void RA::forceread(Var now,int target,std::vector<std::string>& text) {
 	if(now.spaceID==1) {
@@ -54,11 +55,11 @@ void RA::declearVar(Var now,std::vector<std::string>& text) {
     }
     int Max=need_cnt;
     for(int i=need_cnt;i<reg.size();i++) {
-        if(endp[reg[Max]]<endp[reg[i]]) {
+        if(endp[reg[Max]]>endp[reg[i]]) {
             Max=i;
         }
     }
-    if(endp[reg[Max]]>endp[now]) {
+    if(endp[reg[Max]]<endp[now]) {
         writeVar(reg[Max],Max,text,true);
         reg[Max]=now;
         biao[now].reg=Max;

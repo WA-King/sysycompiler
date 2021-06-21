@@ -29,7 +29,6 @@ TOKEN Parse::Match(TOKEN_TYPE t) {
 }
 std::shared_ptr<BaseAST> Parse::getFunDecl(TOKEN_TYPE type,std::string name) {
     if(name=="") name=Match(ID).val;
-	//std::cout<<name<<'\n';
     if(smb.find(name)!=UNDEFINE) {
         printerror("this function has been declared");
     }
