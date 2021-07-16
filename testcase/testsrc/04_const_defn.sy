@@ -1,5 +1,6 @@
 const int x=4;
 
 int main(){
+	printint(x);
     return x;
 }

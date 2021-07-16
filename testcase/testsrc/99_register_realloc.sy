@@ -47,6 +47,7 @@ int main(){
     int b;
     a = 1;
     b = a + 2*9;
-
-    return func(a, b);
+	int ans=func(a,b);
+	printint(ans);
+    return 0;
 }

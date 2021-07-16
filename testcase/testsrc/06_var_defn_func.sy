@@ -4,5 +4,6 @@ int defn(){
 
 int main(){
     int a=defn();
-    return a;
+	printint(a);
+    return 0;
 }

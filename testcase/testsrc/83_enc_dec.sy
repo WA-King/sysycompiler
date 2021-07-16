@@ -31,8 +31,6 @@ int main()
     int res;
     res=enc(a);
     res=dec(res);
-    putint(res);
-    res = 10;
-    putch(res);
+    printint(res);
     return 0;
 }

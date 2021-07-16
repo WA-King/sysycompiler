@@ -20,7 +20,7 @@ int main()
     int mid;
     int n;
     n=10;
-    x=getint();
+	getint(x);
     high=n-1;
     low=0;
     mid=(high+low)/2;
@@ -37,15 +37,13 @@ int main()
     }
 
      if(x==a[mid])
-        putint(x);
+        printint(x);
         else
         {
             x = 0;
-            putint(x);
+        	printint(x);
         }
     
-    x = 10;
-    putch(x);
 
     return 0;
 }

@@ -9,9 +9,6 @@ void Parse::NextTOKEN() {
 		linenote();
 		Last=getToken();
 	} 
-    //PrintTOKEN_TYPE(Last.type);
-    //std::cout << '\n';
-    //std::cout<<' '<<Last.val<<'\n';
 }
 TOKEN Parse::Match(TOKEN_TYPE t) {
     if (Last.type == t) {

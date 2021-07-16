@@ -27,16 +27,12 @@ int main()
     int flag;
     flag=palindrome(test);
     if(flag==1)
-        putint(test);
+		printint(test);
     else
     {
         flag = 0;
-        putint(flag);
+		printint(test);
     }
-
-    flag = 10;
-    putch(flag);
-
     return 0;
     
 }

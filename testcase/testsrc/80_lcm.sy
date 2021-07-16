@@ -28,8 +28,9 @@ int main()
     int m;
     //m = 1478;
     //int t;
-    i=getint();
-    m=getint();
-    
-    return gcd(i,m);
+    getint(i);
+    getint(m);
+	int ans=gcd(i,m);
+	printint(ans);
+    return 0;
 }

@@ -20,7 +20,7 @@ int main()
     int mid;
     int n;
     n=10;
-    x=getint();
+	getint(x);
     high=n-1;
     low=0;
     mid=(high+low)/2;
@@ -43,17 +43,12 @@ int main()
     }
 
      if(flag==1)
-        putint(j);
+	 	printint(j);
         else
         {
             x = 0;
-            putint(x);
+			printint(j);
         }
-        
-
-
-    x= 10;
-    putch(x);
 
     return 0;
 }
