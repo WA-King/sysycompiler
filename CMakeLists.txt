@@ -1,4 +1,5 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 PROJECT(sysycompiler)
 set(CMAKE_CXX_STANDARD 11)
 include_directories(include)
